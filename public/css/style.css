@@ -67,7 +67,7 @@ header {
 
 .main-menu {
     display: inline-block;
-    width: 282px;
+    min-width: 282px;
     height: auto;
     position: relative;
     /*border: 1px solid #000000;*/
@@ -255,6 +255,7 @@ section.body {
 
 .index-categories {
     margin-left: 23px;
+    margin-right: 23px;
     margin-top: 1px;
     padding-bottom: 20px;
     border-bottom: 1px solid #e8e8e8;
@@ -266,7 +267,7 @@ section.body {
     position: relative;
     display: inline-block;
     vertical-align: top;
-    margin-right: 6px;
+    margin-right: 4px;
 }
 
 .categories-item:last-child {
@@ -314,6 +315,8 @@ section.body {
     width: 789px;
     height: auto;
     position: relative;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .last-ads .ads-header {
@@ -424,4 +427,286 @@ section.body {
 .ads-content .one-item .options ul li span {
     float: right;
     margin-top: 2px;
+}
+
+.last-posts {
+    width: 335px;
+    margin-left: 14px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+
+}
+
+.last-posts .post-header {
+    height: 37px;
+    text-align: left;
+}
+
+.last-posts .post-header h2 {
+    font-family: "Arial Regular", sans-serif;
+    font-size: 18px;
+    color: #000;
+    font-weight: bold;
+}
+
+.last-posts .post-content > .one-item .preview {
+    width: 335px;
+    height: 203px;
+    position: relative;
+    overflow: hidden;
+}
+
+.last-posts .post-content > .one-item .preview a img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.last-posts .post-content > .one-item .title {
+    margin-top: 18px;
+}
+
+.last-posts .post-content > .one-item .title a {
+    font-family: "Arial Regular", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    text-decoration: none;
+}
+
+.last-posts .post-content > .one-item .title a:hover {
+    text-decoration: underline;
+}
+
+.last-posts .post-content > .one-item .author {
+    margin-top: 18px;
+    text-transform: uppercase;
+    font-family: "Arial Regular", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #a8a8a8;
+}
+
+.last-posts .post-content > .one-item .author a {
+    font-family: "Arial Regular", sans-serif;
+    font-size: 12px;
+    color: #ee1d1d;
+    text-decoration: none;
+}
+
+.last-posts .post-content > .one-item .author a:hover {
+    text-decoration: underline;
+}
+
+.last-posts .post-content > .one-item .author span {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.last-posts .post-content > .one-item .short-description {
+    margin-top: 18px;
+    font-family: "Arial Regular", sans-serif;
+    font-size: 14px;
+    color: #7b7b7b;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+.last-posts .post-content > .others {
+    margin-top: 30px;
+    position: relative;
+}
+
+.last-posts .post-content > .others .one-item {
+    margin-bottom: 22px;
+}
+
+.last-posts .post-content > .others .one-item .preview {
+    width: 100px;
+    height: 60px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+}
+
+.last-posts .post-content > .others .one-item .preview a img {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.last-posts .post-content > .others .one-item .info {
+    width: 215px;
+    height: auto;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.last-posts .post-content > .others .one-item .info .title {
+    margin-top: 8px;
+}
+
+.last-posts .post-content > .others .one-item .info .title a {
+    font-family: "Arial Regular", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #000;
+    text-decoration: none;
+}
+
+.last-posts .post-content > .others .one-item .info .title a:hover {
+    text-decoration: underline;
+}
+
+.last-posts .post-content > .others .one-item .info .date {
+    margin-top: 10px;
+    font-family: "Arial Regular", sans-serif;
+    font-size: 10px;
+    color: #a5a5a5;
+    text-transform: uppercase;
+}
+
+.last-posts .post-content > .others .view-more {
+    margin-top: 50px;
+    text-align: right;
+}
+
+.last-posts .post-content > .others .view-more a {
+    text-transform: uppercase;
+    font-family: "Arial Regular", sans-serif;
+    font-size: 10px;
+    color: #b3b3b3;
+    text-decoration: none;
+}
+
+.last-posts .post-content > .others .view-more a:hover {
+    text-decoration: underline;
+}
+
+.last-posts .post-content > .others .side-banners {
+    margin-top: 20px;
+}
+
+.last-posts .post-content > .others .side-banners .one-banner {
+    margin-bottom: 15px;
+}
+
+.middle-banner {
+    width: 100%;
+    height: 92px;
+    position: relative;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.middle-banner a img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.last-ads .view-more {
+    margin-top: 50px;
+}
+
+.last-ads .view-more a {
+    font-family: "Arial Regular", sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #356ba8;
+}
+
+.last-ads .view-more a:hover {
+    text-decoration: underline;
+}
+
+.site-info {
+    width: 787px;
+    height: auto;
+    margin: 100px 0 0 23px;
+}
+
+.site-info .info-header {
+    margin-bottom: 25px;
+}
+
+.site-info .info-header h1 {
+    font-family: "Arial Regular", sans-serif;
+    font-size: 20px;
+    color: #000000;
+    font-weight: 500;
+}
+
+.site-info .info-content p {
+    font-family: "Arial Regular", sans-serif;
+    font-size: 12px;
+    color: #000;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+footer {
+    width: 100%;
+    height: 87px;
+    margin-top: 5px;
+    background: #006bac;
+}
+
+footer .logo {
+    margin-top: 10px;
+}
+
+footer .main-menu {
+    margin-top: 25px;
+}
+
+
+footer .copyright {
+    float: right;
+    margin-top: 33px;
+    min-width: 186px;
+    margin-right: 25px;
+}
+
+footer .copyright h2 {
+    font-family: "Arial Regular", sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    float: left;
+    font-weight: 500;
+}
+
+footer .copyright h2 a {
+    font-family: "Arial Regular", sans-serif;
+    font-size: 14px;
+    color: #ff0000;
+    text-decoration: none;
+}
+
+footer .copyright h2 a:hover {
+    text-decoration: underline;
 }

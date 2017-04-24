@@ -7,241 +7,444 @@
     <link rel="stylesheet" type="text/css" href="public/css/style.css">
 </head>
 <body>
-    <div class="top-banner">
-        <a href="#">
-            <img src="public/images/top-banner.png">
-        </a>
+<div class="top-banner">
+    <a href="#">
+        <img src="public/images/top-banner.png">
+    </a>
+</div>
+<header>
+    <div class="carcass">
+        <div class="logo">
+            <a href="#"><img src="public/images/logo.png"></a>
+        </div>
+        <div class="main-menu">
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">О проекте</a></li>
+                <li><a href="#">Новости</a></li>
+            </ul>
+        </div>
+        <div class="user-functions">
+            <ul>
+                <li><a href="#">Войти</a> | <a href="#">Регистрация</a></li>
+                <li><a href="#" class="add-ad-link">Добавить объявление</a></li>
+            </ul>
+        </div>
     </div>
-    <header>
-        <div class="carcass">
-            <div class="logo">
-                <a href="#"><img src="public/images/logo.png"></a>
-            </div>
-            <div class="main-menu">
+</header>
+
+<section class="body group">
+    <div class="search">
+        <form action="#" method="POST">
+            <ul>
+                <li><input type="search" placeholder="Поиск по объявлениям..."></li>
+                <li>
+                    <label>
+                        <select>
+                            <option value>Метро</option>
+                        </select>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <select>
+                            <option value>Категория</option>
+                        </select>
+                    </label>
+                </li>
+                <li>
+                    <button type="submit">Найти</button>
+                </li>
+            </ul>
+        </form>
+    </div>
+    <div class="index-categories group">
+        <div class="categories-item">
+            <div class="item-header"><a href="#">Недвижимость</a></div>
+            <div class="item-content">
                 <ul>
-                    <li><a href="#">Главная</a></li>
-                    <li><a href="#">О проекте</a></li>
-                    <li><a href="#">Новости</a></li>
-                </ul>
-            </div>
-            <div class="user-functions">
-                <ul>
-                    <li><a href="#">Войти</a> | <a href="#">Регистрация</a></li>
-                    <li><a href="#" class="add-ad-link">Добавить объявление</a></li>
+                    <li><a href="#">Квартиры</a></li>
+                    <li><a href="#">Комнаты</a></li>
+                    <li><a href="#">Койка-место</a></li>
                 </ul>
             </div>
         </div>
-    </header>
-
-    <section class="body group">
-        <div class="search">
-            <form action="#" method="POST">
+        <div class="categories-item">
+            <div class="item-header"><a href="#">Вакансии</a></div>
+            <div class="item-content">
                 <ul>
-                    <li><input type="search" placeholder="Поиск по объявлениям..."></li>
-                    <li>
-                        <label>
-                            <select>
-                                <option value>Метро</option>
-                            </select>
-                        </label>
-                    </li>
-                    <li>
-                        <label>
-                            <select>
-                                <option value>Категория</option>
-                            </select>
-                        </label>
-                    </li>
-                    <li>
-                        <button type="submit">Найти</button>
-                    </li>
+                    <li><a href="#">Вакансии</a></li>
+                    <li><a href="#">Ищу работу</a></li>
+                    <li><a href="#">Подработка</a></li>
                 </ul>
-            </form>
+            </div>
         </div>
-		<div class="index-categories group">
-			<div class="categories-item">
-				<div class="item-header"><a href="#">Недвижимость</a></div>
-				<div class="item-content">
-					<ul>
-						<li><a href="#">Квартиры</a></li>
-						<li><a href="#">Комнаты</a></li>
-						<li><a href="#">Койка-место</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="categories-item">
-				<div class="item-header"><a href="#">Вакансии</a></div>
-				<div class="item-content">
-					<ul>
-						<li><a href="#">Вакансии</a></li>
-						<li><a href="#">Ищу работу</a></li>
-						<li><a href="#">Подработка</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="categories-item">
-				<div class="item-header"><a href="#">Услуги</a></div>
-				<div class="item-content">
-					<ul>
-						<li><a href="#">Медицинские</a></li>
-						<li><a href="#">Образование</a></li>
-						<li><a href="#">Няни</a></li>
-						<li><a href="#">Домработницы</a></li>
-						<li><a href="#">Компьютерные</a></li>
-						<li><a href="#">Фото-Видеосъёмка</a></li>
-						<li><a href="#">Ремонт</a></li>
-						<li><a href="#">Прочие услуги</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="categories-item">
-				<div class="item-header"><a href="#">Товары</a></div>
-				<div class="item-content">
-					<ul>
-						<li><a href="#">Детский мир</a></li>
-						<li><a href="#">Мебель</a></li>
-						<li><a href="#">Одежда</a></li>
-						<li><a href="#">Продукты</a></li>
-						<li><a href="#">Разное</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="categories-item">
-				<div class="item-header"><a href="#">Транспорт</a></div>
-				<div class="item-content">
-					<ul>
-						<li><a href="#">Грузоперевозки</a></li>
-						<li><a href="#">Авиаперевозки</a></li>
-						<li><a href="#">Такси</a></li>
-						<li><a href="#">Продаю авто</a></li>
-						<li><a href="#">Аренда авто</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="categories-item">
-				<div class="item-header"><a href="#">Разное</a></div>
-				<div class="item-content">
-					<ul>
-						<li><a href="#">Утеря документов</a></li>
-						<li><a href="#">Нашли документы</a></li>
-						<li><a href="#">Знакомства</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
+        <div class="categories-item">
+            <div class="item-header"><a href="#">Услуги</a></div>
+            <div class="item-content">
+                <ul>
+                    <li><a href="#">Медицинские</a></li>
+                    <li><a href="#">Образование</a></li>
+                    <li><a href="#">Няни</a></li>
+                    <li><a href="#">Домработницы</a></li>
+                    <li><a href="#">Компьютерные</a></li>
+                    <li><a href="#">Фото-Видеосъёмка</a></li>
+                    <li><a href="#">Ремонт</a></li>
+                    <li><a href="#">Прочие услуги</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="categories-item">
+            <div class="item-header"><a href="#">Товары</a></div>
+            <div class="item-content">
+                <ul>
+                    <li><a href="#">Детский мир</a></li>
+                    <li><a href="#">Мебель</a></li>
+                    <li><a href="#">Одежда</a></li>
+                    <li><a href="#">Продукты</a></li>
+                    <li><a href="#">Разное</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="categories-item">
+            <div class="item-header"><a href="#">Транспорт</a></div>
+            <div class="item-content">
+                <ul>
+                    <li><a href="#">Грузоперевозки</a></li>
+                    <li><a href="#">Авиаперевозки</a></li>
+                    <li><a href="#">Такси</a></li>
+                    <li><a href="#">Продаю авто</a></li>
+                    <li><a href="#">Аренда авто</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="categories-item">
+            <div class="item-header"><a href="#">Разное</a></div>
+            <div class="item-content">
+                <ul>
+                    <li><a href="#">Утеря документов</a></li>
+                    <li><a href="#">Нашли документы</a></li>
+                    <li><a href="#">Знакомства</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
-		<div class="main-content group">
-			<div class="last-ads">
-				<div class="ads-header">
-					<h2>Последние объявления</h2>
-				</div>
-				<div class="ads-content">
-					<div class="one-item">
-						<div class="preview">
-							<a href="#"><img src="public/images/preview/good-1.png" ></a>
-						</div>
-						<div class="title"><a href="#">Vans Mens Sz 12</a></div>
-						<div class="price">$24.99</div>
-						<div class="description">
-							Bountiful, UT |7 Mins, <br>
-							Vans Mens size 12 never worn, like new... <a href="#" class="more">more</a>
-						</div>
-						<div class="options">
-							<ul>
-								<li><img src="public/images/icons/views-icon.png"><span>4</span></li>
-								<li><img src="public/images/icons/likes-icon.png"><span>0</span></li>
-							</ul>
-						</div>
-					</div>
-					<div class="one-item">
-						<div class="preview">
-							<a href="#"><img src="public/images/preview/good-2.png" ></a>
-						</div>
-						<div class="title"><a href="#">2000 Sundowner Southwest Sierra Sunlite</a></div>
-						<div class="price">$34,900.00</div>
-						<div class="description">
-							Shoshoni. WY|9 Mins<br>
-							8 wide 7200# axlesManagers w/2 door accessStainless nose wrapWalk thru doorFeed door in escape door4 drop... <a href="#" class="more">more</a>
-						</div>
-						<div class="options">
-							<ul>
-								<li><img src="public/images/icons/views-icon.png"><span>1448</span></li>
-								<li><img src="public/images/icons/likes-icon.png"><span>0</span></li>
-							</ul>
-						</div>
-					</div>
-					<div class="one-item">
-						<div class="preview">
-							<a href="#"><img src="public/images/preview/good-3.png" ></a>
-						</div>
-						<div class="title"><a href="#">Star Wars Tins</a></div>
-						<div class="price">$15.00</div>
-						<div class="description">
-							Magna, UT|10 Mins<br>
-							Complete set, There are 2 BB-8 Tins... <a href="#" class="more">more</a>
-						</div>
-						<div class="options">
-							<ul>
-								<li><img src="public/images/icons/views-icon.png"><span>35</span></li>
-								<li><img src="public/images/icons/likes-icon.png"><span>0</span></li>
-							</ul>
-						</div>
-					</div>
-					<div class="one-item">
-						<div class="preview">
-							<a href="#"><img src="public/images/preview/good-1.png" ></a>
-						</div>
-						<div class="title"><a href="#">Vans Mens Sz 12</a></div>
-						<div class="price">$24.99</div>
-						<div class="description">
-							Bountiful, UT |7 Mins, <br>
-							Vans Mens size 12 never worn, like new... <a href="#" class="more">more</a>
-						</div>
-						<div class="options">
-							<ul>
-								<li><img src="public/images/icons/views-icon.png"><span>4</span></li>
-								<li><img src="public/images/icons/likes-icon.png"><span>0</span></li>
-							</ul>
-						</div>
-					</div>
-					<div class="one-item">
-						<div class="preview">
-							<a href="#"><img src="public/images/preview/good-2.png" ></a>
-						</div>
-						<div class="title"><a href="#">2000 Sundowner Southwest Sierra Sunlite</a></div>
-						<div class="price">$34,900.00</div>
-						<div class="description">
-							Shoshoni. WY|9 Mins<br>
-							8 wide 7200# axlesManagers w/2 door accessStainless nose wrapWalk thru doorFeed door in escape door4 drop... <a href="#" class="more">more</a>
-						</div>
-						<div class="options">
-							<ul>
-								<li><img src="public/images/icons/views-icon.png"><span>1448</span></li>
-								<li><img src="public/images/icons/likes-icon.png"><span>0</span></li>
-							</ul>
-						</div>
-					</div>
-					<div class="one-item">
-						<div class="preview">
-							<a href="#"><img src="public/images/preview/good-3.png" ></a>
-						</div>
-						<div class="title"><a href="#">Star Wars Tins</a></div>
-						<div class="price">$15.00</div>
-						<div class="description">
-							Magna, UT|10 Mins<br>
-							Complete set, There are 2 BB-8 Tins... <a href="#" class="more">more</a>
-						</div>
-						<div class="options">
-							<ul>
-								<li><img src="public/images/icons/views-icon.png"><span>35</span></li>
-								<li><img src="public/images/icons/likes-icon.png"><span>0</span></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="last-posts"></div>
-		</div>
-    </section>
+    <div class="main-content group">
+        <div class="last-ads">
+            <div class="ads-header">
+                <h2>Последние объявления</h2>
+            </div>
+            <div class="ads-content">
+                <section>
+                    <div class="one-item">
+                        <div class="preview">
+                            <a href="#"><img src="public/images/preview/good-1.png"></a>
+                        </div>
+                        <div class="title"><a href="#">Vans Mens Sz 12</a></div>
+                        <div class="price">$24.99</div>
+                        <div class="description">
+                            Bountiful, UT |7 Mins, <br>
+                            Vans Mens size 12 never worn, like new... <a href="#" class="more">more</a>
+                        </div>
+                        <div class="options">
+                            <ul>
+                                <li><img src="public/images/icons/views-icon.png"><span>4</span></li>
+                                <li><img src="public/images/icons/likes-icon.png"><span>0</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="one-item">
+                        <div class="preview">
+                            <a href="#"><img src="public/images/preview/good-2.png"></a>
+                        </div>
+                        <div class="title"><a href="#">2000 Sundowner Southwest Sierra Sunlite</a></div>
+                        <div class="price">$34,900.00</div>
+                        <div class="description">
+                            Shoshoni. WY|9 Mins<br>
+                            8 wide 7200# axlesManagers w/2 door accessStainless nose wrapWalk thru doorFeed door in
+                            escape door4 drop... <a href="#" class="more">more</a>
+                        </div>
+                        <div class="options">
+                            <ul>
+                                <li><img src="public/images/icons/views-icon.png"><span>1448</span></li>
+                                <li><img src="public/images/icons/likes-icon.png"><span>0</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="one-item">
+                        <div class="preview">
+                            <a href="#"><img src="public/images/preview/good-3.png"></a>
+                        </div>
+                        <div class="title"><a href="#">Star Wars Tins</a></div>
+                        <div class="price">$15.00</div>
+                        <div class="description">
+                            Magna, UT|10 Mins<br>
+                            Complete set, There are 2 BB-8 Tins... <a href="#" class="more">more</a>
+                        </div>
+                        <div class="options">
+                            <ul>
+                                <li><img src="public/images/icons/views-icon.png"><span>35</span></li>
+                                <li><img src="public/images/icons/likes-icon.png"><span>0</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="one-item">
+                        <div class="preview">
+                            <a href="#"><img src="public/images/preview/good-1.png"></a>
+                        </div>
+                        <div class="title"><a href="#">Vans Mens Sz 12</a></div>
+                        <div class="price">$24.99</div>
+                        <div class="description">
+                            Bountiful, UT |7 Mins, <br>
+                            Vans Mens size 12 never worn, like new... <a href="#" class="more">more</a>
+                        </div>
+                        <div class="options">
+                            <ul>
+                                <li><img src="public/images/icons/views-icon.png"><span>4</span></li>
+                                <li><img src="public/images/icons/likes-icon.png"><span>0</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="one-item">
+                        <div class="preview">
+                            <a href="#"><img src="public/images/preview/good-2.png"></a>
+                        </div>
+                        <div class="title"><a href="#">2000 Sundowner Southwest Sierra Sunlite</a></div>
+                        <div class="price">$34,900.00</div>
+                        <div class="description">
+                            Shoshoni. WY|9 Mins<br>
+                            8 wide 7200# axlesManagers w/2 door accessStainless nose wrapWalk thru doorFeed door in
+                            escape door4 drop... <a href="#" class="more">more</a>
+                        </div>
+                        <div class="options">
+                            <ul>
+                                <li><img src="public/images/icons/views-icon.png"><span>1448</span></li>
+                                <li><img src="public/images/icons/likes-icon.png"><span>0</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="one-item">
+                        <div class="preview">
+                            <a href="#"><img src="public/images/preview/good-3.png"></a>
+                        </div>
+                        <div class="title"><a href="#">Star Wars Tins</a></div>
+                        <div class="price">$15.00</div>
+                        <div class="description">
+                            Magna, UT|10 Mins<br>
+                            Complete set, There are 2 BB-8 Tins... <a href="#" class="more">more</a>
+                        </div>
+                        <div class="options">
+                            <ul>
+                                <li><img src="public/images/icons/views-icon.png"><span>35</span></li>
+                                <li><img src="public/images/icons/likes-icon.png"><span>0</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <div class="middle-banner">
+                    <a href="#">
+                        <img src="public/images/banners/middle-banner.png">
+                    </a>
+                </div>
+                <section>
+                    <div class="one-item">
+                        <div class="preview">
+                            <a href="#"><img src="public/images/preview/good-1.png"></a>
+                        </div>
+                        <div class="title"><a href="#">Vans Mens Sz 12</a></div>
+                        <div class="price">$24.99</div>
+                        <div class="description">
+                            Bountiful, UT |7 Mins, <br>
+                            Vans Mens size 12 never worn, like new... <a href="#" class="more">more</a>
+                        </div>
+                        <div class="options">
+                            <ul>
+                                <li><img src="public/images/icons/views-icon.png"><span>4</span></li>
+                                <li><img src="public/images/icons/likes-icon.png"><span>0</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="one-item">
+                        <div class="preview">
+                            <a href="#"><img src="public/images/preview/good-2.png"></a>
+                        </div>
+                        <div class="title"><a href="#">2000 Sundowner Southwest Sierra Sunlite</a></div>
+                        <div class="price">$34,900.00</div>
+                        <div class="description">
+                            Shoshoni. WY|9 Mins<br>
+                            8 wide 7200# axlesManagers w/2 door accessStainless nose wrapWalk thru doorFeed door in
+                            escape door4 drop... <a href="#" class="more">more</a>
+                        </div>
+                        <div class="options">
+                            <ul>
+                                <li><img src="public/images/icons/views-icon.png"><span>1448</span></li>
+                                <li><img src="public/images/icons/likes-icon.png"><span>0</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="one-item">
+                        <div class="preview">
+                            <a href="#"><img src="public/images/preview/good-3.png"></a>
+                        </div>
+                        <div class="title"><a href="#">Star Wars Tins</a></div>
+                        <div class="price">$15.00</div>
+                        <div class="description">
+                            Magna, UT|10 Mins<br>
+                            Complete set, There are 2 BB-8 Tins... <a href="#" class="more">more</a>
+                        </div>
+                        <div class="options">
+                            <ul>
+                                <li><img src="public/images/icons/views-icon.png"><span>35</span></li>
+                                <li><img src="public/images/icons/likes-icon.png"><span>0</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="one-item">
+                        <div class="preview">
+                            <a href="#"><img src="public/images/preview/good-1.png"></a>
+                        </div>
+                        <div class="title"><a href="#">Vans Mens Sz 12</a></div>
+                        <div class="price">$24.99</div>
+                        <div class="description">
+                            Bountiful, UT |7 Mins, <br>
+                            Vans Mens size 12 never worn, like new... <a href="#" class="more">more</a>
+                        </div>
+                        <div class="options">
+                            <ul>
+                                <li><img src="public/images/icons/views-icon.png"><span>4</span></li>
+                                <li><img src="public/images/icons/likes-icon.png"><span>0</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="one-item">
+                        <div class="preview">
+                            <a href="#"><img src="public/images/preview/good-2.png"></a>
+                        </div>
+                        <div class="title"><a href="#">2000 Sundowner Southwest Sierra Sunlite</a></div>
+                        <div class="price">$34,900.00</div>
+                        <div class="description">
+                            Shoshoni. WY|9 Mins<br>
+                            8 wide 7200# axlesManagers w/2 door accessStainless nose wrapWalk thru doorFeed door in
+                            escape door4 drop... <a href="#" class="more">more</a>
+                        </div>
+                        <div class="options">
+                            <ul>
+                                <li><img src="public/images/icons/views-icon.png"><span>1448</span></li>
+                                <li><img src="public/images/icons/likes-icon.png"><span>0</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="one-item">
+                        <div class="preview">
+                            <a href="#"><img src="public/images/preview/good-3.png"></a>
+                        </div>
+                        <div class="title"><a href="#">Star Wars Tins</a></div>
+                        <div class="price">$15.00</div>
+                        <div class="description">
+                            Magna, UT|10 Mins<br>
+                            Complete set, There are 2 BB-8 Tins... <a href="#" class="more">more</a>
+                        </div>
+                        <div class="options">
+                            <ul>
+                                <li><img src="public/images/icons/views-icon.png"><span>35</span></li>
+                                <li><img src="public/images/icons/likes-icon.png"><span>0</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="view-more">
+                <a href="#">Смотреть все объявления >></a>
+            </div>
+        </div>
+        <div class="last-posts">
+            <div class="post-header"><h2>Последние новости</h2></div>
+            <div class="post-content">
+                <div class="one-item">
+                    <div class="preview">
+                        <a href="#">
+                            <img src="public/images/posts/post-1.png">
+                        </a>
+                    </div>
+                    <div class="title"><a href="#">Small business Owner Are Full of Passion And Smiles</a></div>
+                    <div class="author">by <a href="#">shane doe</a><span>-</span>July 15, 2016</div>
+                    <div class="short-description">
+                        More of this less hello salamander lied porpoise much over tightly circa horse taped so
+                        innocuously outside crud mightily rigorous...
+                    </div>
+                </div>
+                <div class="others">
+                    <div class="one-item">
+                        <div class="preview">
+                            <a href="#">
+                                <img src="public/images/posts/post-2.png">
+                            </a>
+                        </div>
+                        <div class="info">
+                            <div class="title"><a href="#">6 Best Tips for Building a Good Shipping Boat</a></div>
+                            <div class="date">july 14, 2016</div>
+                        </div>
+                    </div>
+                    <div class="one-item">
+                        <div class="preview">
+                            <a href="#">
+                                <img src="public/images/posts/post-3.png">
+                            </a>
+                        </div>
+                        <div class="info">
+                            <div class="title"><a href="#">US President Address Calms The New Emerging Markets</a></div>
+                            <div class="date">july 14, 2016</div>
+                        </div>
+                    </div>
+                    <div class="view-more">
+                        <a href="#">view all</a>
+                    </div>
+                    <div class="side-banners">
+                        <div class="one-banner">
+                            <a href="#">
+                                <img src="public/images/banners/side-banner.png">
+                            </a>
+                        </div>
+                        <div class="one-banner">
+                            <a href="#">
+                                <img src="public/images/banners/side-banner-2.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="site-info">
+        <div class="info-header">
+            <h1>Сайт объявлений Tumar24.ru</h1>
+        </div>
+        <div class="info-content">
+            <p>Давно выяснено, что при оценке <b>дизайна и композиции</b> читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).</p>
+            <p>Давно выяснено, что при оценке <b>дизайна и композиции</b> читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="carcass group">
+        <div class="logo">
+            <a href="#"><img src="public/images/logo.png"></a>
+        </div>
+        <div class="main-menu">
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">О проекте</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Реклама на сайте</a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <h2>Разработанно <a href="#">Double Byte</a></h2>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
