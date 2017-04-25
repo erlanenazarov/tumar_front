@@ -40,9 +40,29 @@ body {
 }
 
 header {
+    top: 100px;
     width: 100%;
     height: 62px;
     background: #006bac;
+    position: absolute;
+    z-index: 5;
+}
+
+.mirror {
+    width: 100%;
+    height: 62px;
+    background: transparent;
+    position: relative;
+}
+
+header.fixed {
+    width: 100%;
+    height: 62px;
+    background: #006bac;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
 }
 
 .carcass {
@@ -598,11 +618,11 @@ section.body {
     text-decoration: underline;
 }
 
-.last-posts .post-content > .others .side-banners {
+.last-posts .side-banners {
     margin-top: 20px;
 }
 
-.last-posts .post-content > .others .side-banners .one-banner {
+.last-posts .side-banners .one-banner {
     margin-bottom: 15px;
 }
 
@@ -710,3 +730,480 @@ footer .copyright h2 a {
 footer .copyright h2 a:hover {
     text-decoration: underline;
 }
+
+.view-more .pagination {
+    padding-left: 0;
+    width: 624px;
+    height: 35px;
+    margin: 0 auto;
+    position: relative;
+    line-height: 35px;
+}
+
+.view-more .pagination li {
+    list-style-type: none;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 6px;
+    width: 37px;
+    height: 32px;
+    border: 1px solid #acacac;
+    text-align: center;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.view-more .pagination li.active,
+.view-more .pagination li:hover {
+    border: 1px solid #2757ae;
+    color: #2757ae;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.view-more .pagination li.active a,
+.view-more .pagination li:hover a {
+    color: #2757ae;
+
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
+    transition: color 0.5s;
+}
+
+.view-more .pagination li:last-child {
+    margin-right: 0;
+}
+
+.view-more .pagination li a {
+    font-family: "Arial Bold", sans-serif;
+    font-size: 14px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
+    transition: color 0.5s;
+}
+
+.view-more .pagination li a:hover {
+    text-decoration: none;
+}
+
+.no-scroll {
+    height: 100%;
+    overflow: hidden;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: rgba(0,0,0,0.7);
+    z-index: 1000;
+    overflow: auto;
+    display: none;
+}
+
+@keyframes appear {
+    from {
+        margin-top: -2000px;
+    }
+
+    to {
+        margin-top: 100px;
+    }
+}
+@-webkit-keyframes appear {
+    from {
+        margin-top: -2000px;
+    }
+
+    to {
+        margin-top: 100px;
+    }
+}
+@-moz-keyframes appear {
+    from {
+        margin-top: -2000px;
+    }
+
+    to {
+        margin-top: 100px;
+    }
+}
+@-o-keyframes appear {
+    from {
+        margin-top: -2000px;
+    }
+
+    to {
+        margin-top: 100px;
+    }
+}
+
+.modal-carcass {
+    display: block;
+    width: 731px;
+    height: 758px;
+    position: relative;
+    margin: 100px auto 0 auto;
+    background: #ffffff;
+
+    -webkit-animation-name: appear;
+    -moz-animation-name: appear;
+    -o-animation-name: appear;
+    animation-name: appear;
+
+    -webkit-animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    -o-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+}
+
+.modal-carcass .modal-header {
+    font-family: "Arial Regular", sans-serif;
+    font-size: 20px;
+    color: #000;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.modal-carcass .modal-body {
+    width: 568px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.modal-carcass .modal-body form .input-row {
+    margin-bottom: 16px;
+}
+
+.modal-carcass .modal-body form .input-row label select {
+    width: 275px;
+    height: 37px;
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid #5181b7;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 15px;
+    margin-right: 18px;
+    cursor: pointer;
+    font-family: "Arial Regular", sans-serif;
+    font-size: 12px;
+    color: #818181;
+}
+
+.modal-carcass .modal-body form .input-row label:last-child select {
+    margin-right: 0;
+}
+
+.modal-carcass .modal-body form .input-row label select:focus {
+    outline: none;
+}
+
+.modal-carcass .modal-body form .input-row input[type="text"] {
+    width: 100%;
+    height: 37px;
+    border: 1px solid #5181b7;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 15px;
+    cursor: text;
+    font-family: "Arial Regular", sans-serif;
+    font-size: 12px;
+    color: #000;
+}
+
+.modal-carcass .modal-body form .input-row input:focus,
+.modal-carcass .modal-body form .input-row textarea:focus{
+    outline: none;
+}
+
+.modal-carcass .modal-body form .input-row label.upload {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.modal-carcass .modal-body form .input-row .info {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 15px;
+    font-family: "Arial Regular", sans-serif;
+    font-size: 12px;
+    color: #818181;
+    line-height: 18px;
+}
+
+
+.modal-carcass .modal-body form .input-row input[type="number"] {
+    width: 158px;
+    height: 37px;
+    display: inline-block;
+    border: 1px solid #5181b7;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 15px;
+    font-family: "Arial Regular", sans-serif;
+    font-size: 12px;
+    color: #000;
+}
+
+.modal-carcass .modal-body form .input-row textarea {
+    width: 100%;
+    height: 93px;
+    border: 1px solid #5181b7;
+    font-family: "Arial Bold", sans-serif;
+    font-size: 12px;
+    color: #000;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 15px;
+    resize: none;
+    text-align: justify;
+}
+
+.modal-carcass .modal-body form .input-row input[data-type="phone-number"] {
+    width: 256px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.modal-carcass .modal-body form .input-row input[data-type="phone-number"]::-webkit-inner-spin-button,
+.modal-carcass .modal-body form .input-row input[data-type="phone-number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+.modal-carcass .modal-body form .input-row:nth-child(6) .info {
+    vertical-align: middle;
+}
+
+.modal-carcass .modal-body form .input-row span {
+    font-family: "Arial Regular", sans-serif;
+    font-size: 12px;
+    color: #818181;
+}
+
+.modal-carcass .modal-body form .input-row .map {
+    width: 100%;
+    height: 134px;
+    position: relative;
+    border: 1px solid #4f6173;
+    overflow: hidden;
+}
+
+.modal-carcass .modal-body form .input-row button[type=submit] {
+    width: 158px;
+    height: 37px;
+    margin: 0 auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #5181b7;
+    border: 1px solid #5181b7;
+    color: #ffffff;
+    font-family: "Arial Bold", sans-serif;
+    font-size: 12px;
+    cursor: pointer;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.modal-carcass .modal-body form .input-row button[type=submit]:focus {
+    outline: none;
+}
+
+.modal-carcass .modal-body form .input-row button[type=submit]:hover {
+    background: transparent;
+    color: #5181b7;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.modal-carcass .modal-body form .input-row:last-child {
+    text-align: center;
+}
+
+.modal-carcass .md-close {
+    position: absolute;
+    font-family: "Arial Regular", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    right: 0;
+    top: -25px;
+    cursor: pointer;
+}
+
+.login-carcass {
+    width: 666px;
+    min-height: 498px;
+    background: #ffffff;
+    margin: 100px auto 0 auto;
+    position: relative;
+
+    -webkit-animation-name: appear;
+    -moz-animation-name: appear;
+    -o-animation-name: appear;
+    animation-name: appear;
+
+    -webkit-animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    -o-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+}
+
+.login-carcass .modal-header {
+    text-align: center;
+    font-family: "Arial Regular", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.login-carcass .modal-body {
+    width: 568px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+
+.login-carcass .modal-body .wrap-left {
+    width: 239px;
+    height: auto;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 34px;
+}
+
+.login-carcass .modal-body .wrap-right {
+    width: 241px;
+    height: auto;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 42px;
+}
+
+.login-carcass .modal-body .wrap-title {
+    font-family: "Arial Regular", sans-serif;
+    font-size: 18px;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.login-carcass .modal-body .input-row {
+    margin-bottom: 17px;
+}
+
+.login-carcass .modal-body .input-row input:focus {
+    outline: none;
+}
+
+.login-carcass .modal-body .input-row input {
+    width: 237px;
+    height: 37px;
+    border: 1px solid #5181b7;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 15px;
+    font-family: "Arial Regular", sans-serif;
+    font-size: 14px;
+    color: #000;
+}
+
+.login-carcass .modal-body .input-row button {
+    width: 100%;
+    height: 37px;
+    font-family: "Arial Regular", sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    cursor: pointer;
+    background: #5181b7;
+    border: 1px solid #5181b7;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.login-carcass .modal-body .input-row button:focus {
+    outline: none;
+}
+
+.login-carcass .modal-body .input-row button:hover {
+    background: transparent;
+    color: #5181b7;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.login-carcass .modal-body .input-row span {
+    font-family: "Arial Regular", sans-serif;
+    font-size: 14px;
+    color: #000;
+    font-weight: 600;
+}
+
+.login-carcass .modal-body .delimiter {
+    width: 2px;
+    height: 340px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    background: #4f6173;
+}
+
+.login-carcass .md-close {
+    position: absolute;
+    font-family: "Arial Regular", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    right: 0;
+    top: -25px;
+    cursor: pointer;
+}
+
