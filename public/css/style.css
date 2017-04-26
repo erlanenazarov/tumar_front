@@ -1334,9 +1334,9 @@ footer .copyright h2 a:hover {
     overflow-x: hidden;
     overflow-y: auto;
     font-family: "Arial Regular", sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     color: #000000;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .all-news .one-item .link {
@@ -1586,9 +1586,9 @@ footer .copyright h2 a:hover {
     height: auto;
     margin: 45px auto 0 auto;
     font-family: "Arial Regular", sans-serif;
-    font-size: 12px;
+    font-size: 16px;
     color: #000000;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 20px;
 }
 
