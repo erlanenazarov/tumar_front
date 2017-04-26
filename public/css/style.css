@@ -1207,3 +1207,557 @@ footer .copyright h2 a:hover {
     cursor: pointer;
 }
 
+.all-news {
+    width: 786px;
+    height: auto;
+    margin-top: 5px;
+    display: inline-block;
+    vertical-align: top;
+    /*margin-right: 18px;*/
+    position: relative;
+}
+
+.bread-crumbs {
+
+}
+
+.bread-crumbs ul {
+    padding-left: 0;
+}
+
+.bread-crumbs ul li {
+    list-style-type: none;
+    display: inline-block;
+    font-family: "Arial Regular", sans-serif;
+    font-size: 12px;
+    color: #818181;
+}
+
+.bread-crumbs ul li a {
+    font-family: "Arial Regular", sans-serif;
+    font-size: 12px;
+    color: #818181;
+    text-decoration: none;
+}
+
+.bread-crumbs ul li a:hover {
+    text-decoration: underline;
+}
+
+.bread-crumbs ul li span {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.bread-crumbs ul li.active a {
+    color: #356ba8;
+}
+
+.all-news section {
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+.all-news .one-item {
+    width: 100%;
+    height: 196px;
+    margin-bottom: 25px;
+}
+
+.all-news .one-item .title a {
+    font-family: "Arial Bold", sans-serif;
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.all-news .one-item .title a:hover {
+    color: #5181b7;
+    text-decoration: underline;
+}
+
+.all-news .one-item .info {
+    margin-top: 18px;
+    width: 333px;
+    position: relative;
+}
+
+.all-news .one-item .info span:first-child {
+    float: left;
+    font-family: "Arial Regular", sans-serif;
+    font-size: 12px;
+    color: #b1b0b0;
+}
+
+.all-news .one-item .info span:last-child {
+    float: right;
+    font-family: "Arial Regular", sans-serif;
+    font-size: 12px;
+    color: #b1b0b0;
+}
+
+.all-news .one-item .description {
+    margin-top: 25px;
+}
+
+.all-news .one-item .description .preview {
+    width: 281px;
+    height: 111px;
+    position: relative;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    vertical-align: top;
+    margin-right: 12px;
+    overflow: hidden;
+}
+
+.all-news .one-item .description .preview img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.all-news .one-item .description > .content {
+    width: 487px;
+    height: 111px;
+    display: inline-block;
+    vertical-align: top;
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-family: "Arial Regular", sans-serif;
+    font-size: 12px;
+    color: #000000;
+    font-weight: 600;
+}
+
+.all-news .one-item .link {
+    margin-top: 5px;
+}
+
+.all-news .one-item .link span {
+    float: right;
+}
+
+.all-news .one-item .link span a {
+    font-family: "Arial Regular", sans-serif;
+    font-size: 12px;
+    color: #356ba8;
+    text-decoration: none;
+}
+
+.all-news .one-item .link span a:hover {
+    text-decoration: underline;
+}
+
+
+.all-news .middle-banner {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.one-ad,
+.one-post{
+    width: 786px;
+    height: auto;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.one-ad section,
+.one-post section{
+    position: relative;
+}
+
+.one-ad .title,
+.one-post .title{
+    margin-top: 20px;
+}
+
+.one-ad .title h1,
+.one-post .title h1 {
+    font-family: "Arial Regular", sans-serif;
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+}
+
+.one-ad .info {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 552px;
+}
+
+.one-post .info {
+    width: 340px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.one-ad .info .views,
+.one-ad .info .date,
+.one-ad .info .user,
+.one-post .info .views,
+.one-post .info .date,
+.one-post .info .user {
+    font-family: "Arial Regular", sans-serif;
+    font-size: 12px;
+    color: #818181;
+}
+
+.one-ad .info .user a {
+    color: #356ba8;
+    text-decoration: none;
+}
+
+.one-ad .info .user a:hover {
+    text-decoration: underline;
+}
+
+.ad-info {
+    margin-top: 20px;
+}
+
+.ad-info ul {
+    padding-left: 0;
+}
+
+.ad-info ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 15px;
+    font-family: "Arial Regular", sans-serif;
+    font-size: 14px;
+    color: #000;
+    font-weight: 600;
+}
+
+.ad-info ul li a, .ad-info ul li span {
+    font-family: "Arial Regular", sans-serif;
+    font-size: 14px;
+    color: #356ba8;
+    text-decoration: none;
+}
+
+.ad-info ul li a:hover {
+    text-decoration: underline;
+}
+
+.one-ad .slider {
+    margin-top: 20px;
+    margin-left: 12px;
+    width: 770px;
+    overflow: hidden;
+    position: relative;
+}
+
+.one-ad .slider-pagination {
+    height: 100px;
+    margin-top: 15px;
+    margin-left: 12px;
+    overflow: hidden;
+}
+
+.one-ad .slider-pagination img {
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.slider-pagination .slick-slide {
+    height: 100px;
+    position: relative;
+}
+
+.one-ad .ad-description {
+    width: 510px;
+    height: auto;
+    display: inline-block;
+    vertical-align: top;
+    font-family: "Arial Regular", sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin-left: 12px;
+    margin-top: 15px;
+    text-align: justify;
+}
+
+.one-ad .ad-price {
+    margin-top: 15px;
+    width: 235px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 28px;
+    font-family: "Arial Bold", sans-serif;
+    font-size: 24px;
+    color: #356ba8;
+}
+
+.one-ad .ad-price .pre {
+    font-family: "Arial Regular", sans-serif;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.one-ad .map {
+    height: 187px;
+    position: relative;
+    border: 1px solid #4f6173;
+    margin-top: 20px;
+}
+
+.one-ad .navigations,
+.one-post .navigations{
+    margin-top: 60px;
+}
+
+.one-ad .navigations span:first-child,
+.one-post .navigations span:first-child{
+    float: left;
+}
+
+.one-ad .navigations span:last-child,
+.one-post .navigations span:last-child {
+    float: right;
+}
+
+.one-ad .navigations span a,
+.one-post .navigations span a{
+    font-family: "Arial Regular", sans-serif;
+    font-size: 16px;
+    color: #356ba8;
+    text-decoration: none;
+}
+
+.one-ad .navigations span a:hover,
+.one-post .navigations span a:hover{
+    text-decoration: underline;
+}
+
+.notification {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.notification.warning {
+    font-family: "Arial Regular", sans-serif;
+    font-size: 16px;
+    color: #a74545;
+}
+
+.one-post .preview {
+    margin-top: 25px;
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+.one-post .preview img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.one-post .post-body {
+    width: 757px;
+    height: auto;
+    margin: 45px auto 0 auto;
+    font-family: "Arial Regular", sans-serif;
+    font-size: 12px;
+    color: #000000;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.one-post .share {
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+.one-post .share span {
+    font-family: "Arial Regular", sans-serif;
+    font-size: 10px;
+    color: #000;
+    padding-top: 10px;
+    font-weight: 600;
+    border-top: 1px solid #e8e8e8;
+}
+
+.one-post .share ul {
+    padding-left: 0;
+    margin-top: 20px;
+}
+
+.one-post .share ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.one-post .share ul li a {
+    font-family: "Arial Regular", sans-serif;
+    font-size: 10px;
+    color: #999999;
+    text-decoration: none;
+    border: 1px solid #e0e0e0;
+    padding: 5px 5px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.one-post .share ul li a img {
+    width: 14px;
+    height: 12px;
+    vertical-align: middle;
+}
+
+.one-post .middle-banner {
+    margin-top: 50px;
+}
+
+.one-post .main-text {
+    width: 100%;
+    font-family: "Arial Regular", sans-serif;
+    font-size: 100px;
+    color: #356ba8;
+    text-align: center;
+}
+
+.one-post .desc-text {
+    margin-top: 70px;
+    width: 100%;
+    text-align: center;
+    font-family: "Arial Regular", sans-serif;
+    font-size: 20px;
+    color: #000;
+}
+
+.one-post .desc-text ul {
+    padding-left: 0;
+}
+
+.one-post .desc-text ul li {
+    list-style-type: none;
+}
+
+.one-post .desc-text ul li a {
+    font-family: "Arial Regular", sans-serif;
+    font-size: 20px;
+    color: #356ba8;
+    text-decoration: none;
+}
+
+.one-post .desc-text ul li a:hover {
+    text-decoration: underline;
+}
+
+.change-password {
+    width: 786px;
+    height: auto;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+.change-password .help-text {
+    font-family: "Arial Regular", sans-serif;
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 25px;
+    margin-top: 30px;
+    font-weight: 600;
+}
+
+.change-password .form {
+    margin-top: 25px;
+}
+
+.change-password .form input:focus,
+.change-password .form button:focus, {
+    outline: none;
+}
+
+.change-password .form input {
+    width: 327px;
+    height: 40px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #356ba8;
+    padding-left: 15px;
+    font-family: "Arial Regular", sans-serif;
+    font-size: 14px;
+    color: #000;
+}
+
+.change-password .form  button {
+    width: 185px;
+    height: 40px;
+    font-family: "Arial Regular", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    background: #356ba8;
+    border: 1px solid #356ba8;
+    margin-left: 30px;
+    cursor: pointer;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+
+.change-password .form button:hover {
+    background: transparent;
+    color: #356ba8;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.change-password .form .input-row {
+    margin-bottom: 25px;
+}
+
+.change-password .form .input-row button {
+    margin-left: 0;
+}
+
+.change-password .thanks-text {
+    font-family: "Arial Regular", sans-serif;
+    font-size: 20px;
+    color: #356ba8;
+}

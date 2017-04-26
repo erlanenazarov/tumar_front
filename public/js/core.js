@@ -3,9 +3,28 @@
  */
 
 
-function loadScript(url, callback) {
+function loadScript(url, callback, css) {
     var body = document.getElementsByTagName('body')[0];
     var script = document.createElement('script');
+
+    if(css != null) {
+        if(css.includes(',')) {
+            var styles = css.split(',');
+            for(var s in styles) {
+                var style = document.createElement('link');
+                style.rel = 'stylesheet';
+                style.type = 'text/css';
+                style.href = styles[s];
+                $('head').prepend(style);
+            }
+        } else {
+            var _style = document.createElement('link');
+            _style.rel = 'stylesheet';
+            _style.type = 'text/css';
+            _style.href = css;
+            document.getElementsByTagName('head')[0].appendChild(_style);
+        }
+    }
 
     script.src = url;
     script.onreadystatechange = callback;
@@ -99,6 +118,21 @@ $(document).ready(function () {
     loadScript(pathToLibs + 'jquery.masked.min.js', function (event) {
         $('#phone').mask('+7 - (999) - 999 - 99 - 99');
     });
+
+    var slider = $('#slider');
+    if($(slider) != undefined) {
+        loadScript('public/slick/slick.min.js', function () {
+            var slickPagination = $('#slider-pagination');
+            $(slider).slick({
+                asNavFor: slickPagination
+            });
+            $(slickPagination).slick({
+                asNavFor: slider,
+                slidesToShow: 5,
+                slidesToScroll: 1
+            });
+        }, 'public/slick/slick-theme.css,public/slick/slick.css');
+    }
 });
 
 
