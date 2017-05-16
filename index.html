@@ -5,8 +5,51 @@
     <title>TumaR 24</title>
     <link rel="stylesheet" type="text/css" href="public/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="public/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body class>
+<div class="hamburger">
+    <div class="bars-wrapper" id="burger">
+        <img src="public/images/icons/menu.png">
+    </div>
+
+</div>
+<div class="mobile-menu">
+    <ul class="menu-bar">
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">О нас</a></li>
+        <li><a href="#">Новости</a></li>
+    </ul>
+    <form>
+        <ul class="search-bar">
+            <li><input type="search" placeholder="Поиск по объявлениям"></li>
+            <li>
+                <label>
+                    <select>
+                        <option selected>Город</option>
+                    </select>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <select>
+                        <option selected>Метро</option>
+                    </select>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <select>
+                        <option selected>Категория</option>
+                    </select>
+                </label>
+            </li>
+            <li>
+                <button type="submit">Поиск</button>
+            </li>
+        </ul>
+    </form>
+</div>
 <div class="top-banner">
     <a href="#">
         <img src="public/images/top-banner.png">
@@ -561,5 +604,26 @@
 <script>var pathToLibs = 'public/js/';</script>
 <script src="public/js/jquery-3.2.1.min.js"></script>
 <script src="public/js/core.js"></script>
+<script>
+    $.fn.hasAttr = function (value) {
+        return this.attr(value) !== undefined;
+    };
+    $(document).ready(function () {
+        var burger = $('#burger');
+        $(burger).on('click', function (event) {
+            var mobileMenu = $('.mobile-menu').first();
+            if(!$(burger).hasAttr('data-toggle')) $(burger).attr('data-toggle', 'false');
+            if($(burger).attr('data-toggle') == 'false') {
+                $(mobileMenu).fadeIn('fast');
+                $(burger).attr('data-toggle', 'true');
+                $('body').addClass('no-scroll');
+            } else if($(burger).attr('data-toggle') == 'true') {
+                $(mobileMenu).fadeOut('fast');
+                $(burger).attr('data-toggle', 'false');
+                $('body').removeClass('no-scroll');
+            }
+        });
+    });
+</script>
 </body>
 </html>
